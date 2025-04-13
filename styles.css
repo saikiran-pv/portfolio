@@ -14,6 +14,36 @@ h1, h2, .section-title {
 }
   
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      background-color: black;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  
+    .nav.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+
 .cursor-effect {
     font-size: 1rem;
     font-weight: bold;
@@ -45,6 +75,12 @@ a {
     background-image: url(images/profile.jpeg);
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: 1024px){
+    .container-one {
+        background-image: none;
+    }
 }
 
 .box {
@@ -214,6 +250,7 @@ ul {
 
 .projects-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
@@ -226,6 +263,7 @@ ul {
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
 }
 
 .project-card:hover {
@@ -413,6 +451,30 @@ ul {
 }
   
 
+
+
+/* Responsive adjustment for tablets */
+@media (max-width: 1024px) {
+    .icon-container {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+  }
+  
+  /* Responsive adjustment for phones */
+  @media (max-width: 768px) {
+    .icon-container {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .icon-container {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  
+
 #education { 
     background-color: rgb(0, 0, 0);
 }
@@ -425,7 +487,7 @@ section {
 
 .icon-container {
     display: grid;
-    grid-template-columns: repeat(6, 3cm);
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     justify-content: center;
     align-content: center;
@@ -544,3 +606,86 @@ section {
 #projects { background-color: rgb(0, 0, 0); }
 #skills { background-color: rgb(0, 0, 0); }
 #contact { background-color: rgb(0, 0, 0);}
+
+
+
+.education-card {
+    display: flex;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 2rem;
+    transition: transform 0.3s;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .edu-left {
+    flex: 1;
+  }
+  
+  .edu-left h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .degree {
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0.3rem 0;
+    color: #ffffff;
+  }
+
+  .gpa{
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+  
+  .institution {
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+
+  .course{
+    color: #008080;
+    font-size: large;
+
+  }
+  
+  .duration {
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  
+  .edu-right {
+    flex: 1;
+  }
+  
+  .edu-right ul {
+    margin: 0;
+    padding-left: 1rem;
+    list-style-type: disc;
+    color: #444;
+    font-size: 0.95rem;
+  }
+
+  .edu-right li {
+    color: #ffffff;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .education-card {
+      flex-direction: column;
+    }
+  
+    .edu-left, .edu-right {
+      width: 100%;
+    }
+  }

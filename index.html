@@ -13,14 +13,22 @@
 
 </head>
 <body>
-    
-    <div class="nav">
+
+    <div class="hamburger" id="hamburger">
+        &#9776;
+    </div>
+
+    <div class="nav" id="nav">
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a href="./books.html">Books</a>
+        <a href="./arts.html">Arts</a>
     </div>
+
+   
     <!-- <img src="profile.jpg" alt="Profile Image" class="full-screen-image"> -->
     <div class="container-one" style="margin-right: 0px;">
       
@@ -38,60 +46,50 @@
         </div>
     </div>
 
-    <section id="education">
-        <div class="edu" style="display: flex;">
-            <div class="edu-box-one">
-                <div style="margin-top: 10vh;">
-                    <i  style="color:#008080;" class="fas fa-camera fa-5x fa fa-graduation-cap" aria-hidden="true"></i>
-                </div>
-                <div>
-                    <h1 style="color:#008080;"> Educational Background</h1>
-                </div>
-            </div>
-            <div class="edu-box-two" >
-
-                <ul class = "edu-list">
-                    <li>
-                        <div style="display:flex;">
-                            <img class ="uni-logo" src = "images/uni.png">
-                            <p style="color:#008080;font-weight: bold;margin-top: 10px;padding-left: 8px;">The University of Texas at Arlington</p>
-                        </div>
-                        <div class ="ed-det">
-                            <div>
-                                <p style="font-style: italic;">Master of Science</p>
-                            </div>
-                            <div>
-                                <p>Major: Computer and Informational Sciences, Intelligence Systems and Software Engineering</p>
-                            </div>
-                            <div>
-                                <p>Course work: Design and Analysis of Algorithms, Data modeling and Analysis Techniques, Machine Learning, Artificial Intelligence, Distributed Systems</p>
-                            </div>
-                            <div>
-                                <p> CGPA: 4.0</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div style="display:flex;">
-                            <img class ="uni-logo" src = "images/cmr.png">
-                            <p style=" color:#008080; font-weight: bold;margin-top: 10px;padding-left: 8px;">CMR Engineering College</p>
-                        </div>
-                        <div class ="ed-det">
-                            <div>
-                                <p style="font-style: italic;">Bachelor of Technology</p>
-                            </div>
-                            <div>
-                                <p> Major: Computer Science and Engineering</p>
-                            </div>
-                            <div>
-                                <p> CGPA: 3.5</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <section id="education" style="margin-top: 100px;display: grid;justify-content: center;">
+        <h1 style="text-align: center;color:#008080; padding-bottom: 20px;">Education</h1>
+      
+        <div class="education-card">
+          <div class="edu-left">
+            <p class="course">Master of Science</p>
+            <p class="degree">Computer Science</p>
+            <p class="institution">University of Texas, Arlington</p>
+            <p class="duration">2023 – 2025</p>
+            <p class = "gpa">GPA: 4.0 / 4.0</p>
+          </div>
+          <div class="edu-right">
+            <p class="duration">Course Work</p>
+            <ul>
+              <li>Design and Analysis of Algorithms</li>
+              <li>Web Data Management</li>
+              <li>Software Engineering</li>
+              <li>Cloud Computing</li>
+              <li>Machine Learning</li>
+              <li>Artificial Intelligence</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      
+        <div class="education-card">
+          <div class="edu-left">
+            <p class="course">Bachelor of Technology</p>
+            <p class="degree">Computer Science</p>
+            <p class="institution">JNTU Hyderabad, India</p>
+            <p class="duration">2016 – 2020</p>
+            <p class = "gpa">GPA: 8.02 / 10.0</p>
+          </div>
+          <div class="edu-right">
+            <p class="duration">Course Work</p>
+            <ul>
+              <li>OOPS through Java</li>
+              <li>Database Management Systems</li>
+              <li>Python Programming</li>
+              <li>Front-end Web Development</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
 
     <section id="experience">
         <div class="exp" style="padding: 40px;">

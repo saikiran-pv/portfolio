@@ -1,0 +1,88 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+  }
+  
+  #books h1 {
+    text-align: center;
+    color: #00ffd5;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .book-card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 255, 213, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .book-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .book-card .author {
+    color: #bbbbbb;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .status {
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  
+  .status.reading {
+    background-color: #00bcd4;
+    color: #000;
+  }
+  
+  .status.completed {
+    background-color: #4caf50;
+    color: #000;
+  }
+  
+  .status.queue {
+    background-color: #ff9800;
+    color: #000;
+  }
+  
+  .back-link {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #00ffd5;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: #ffffff;
+  }
+  
